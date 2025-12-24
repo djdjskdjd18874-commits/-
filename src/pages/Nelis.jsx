@@ -28,6 +28,7 @@ export default class Nelis extends Component {
         }
         
       );
+      
     });
   
  
@@ -100,7 +101,7 @@ export default class Nelis extends Component {
     <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-4">
       <div class="position-relative image-container">
          <Link to="/card">
-            <img src="../../public/photo/نيلز1.jpg" alt="Card" className="images" />
+            <img src="/public/photo/نيلز1.jpg" alt="Card" className="images" />
           </Link>
         <div className=' text-center bg-body-secondary  image '>
           <h3>

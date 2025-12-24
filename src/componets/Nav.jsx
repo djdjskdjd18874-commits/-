@@ -15,7 +15,8 @@ export default class Nav extends Component {
   render() {
     return <>
 
-
+ <div className='slide-in-left'>
+  
       <section className='hight  bg-color '>
 
         <nav className="navbar navbar-expand-lg   h-nav  "  >
@@ -89,7 +90,7 @@ export default class Nav extends Component {
   <nav className="navbar navbar-expand-lg bg-nav h-nav2 w-75 radius">
     <div className="container-fluid">
       <a className="navbar-brand" href="#">
-        <img src="./public/photo/logo2.jpg" alt="" width="90" height="70" className="logo" />
+        <img src="/public/photo/logo2.jpg" alt="" width="90" height="70" className="logo" />
       </a>
 
       {/* زر الفتح يظهر فقط على الموبايل */}
@@ -160,6 +161,7 @@ export default class Nav extends Component {
   </div>
 </div>
 
+ </div>
 
 
 

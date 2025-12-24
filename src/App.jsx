@@ -13,7 +13,12 @@ import Accessories from './pages/Accessories'
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  
+    const [cart, setCart] = useState([]);
+
+    const addToCart = (product) => {
+       setCart((prev) => [...prev, product]);
+       };
 
   return<>
   <Nav/>
@@ -23,6 +28,7 @@ function App() {
    <Route path='/Nelis' element={<Nelis/>}/>
     <Route path='/Card' element={<Card/>}/>
     <Route path='/Accessories' element={<Accessories/>}/>
+    
  
   </Routes>
    

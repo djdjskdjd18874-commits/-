@@ -15,11 +15,12 @@ export const navMenu = [
 },
 {
     title : "شنط",
-    href : "/bags"
-
+    href : "/Bags"
 },
+
 {
-   
+    title : "منتج",
+    href : "/ProductsPage"
     
 },
 
