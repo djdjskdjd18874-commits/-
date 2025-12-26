@@ -2,14 +2,23 @@ import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
-const products = [ 
-  { id: 1, name: "تيشيرت", price: 150, image: "../../public/photo/نيلز1.jpg" },
-   { id: 2, name: "حذاء", price: 300, image: "/images/shoes.jpg" }, 
-  { id: 3, name: "شنطة", price: 200, image: "/images/bag.jpg" },
- ];
 
-export default function Card() {
+import { useParams } from "react-router";
+import products from "../../static/product";
+
+
+
+gsap.registerPlugin(ScrollTrigger);
+
+export default function Card(product) {
+  function Nelis({ products }) {
+  const { id } = useParams(); // يجيب الـ id من الرابط
+  const product = products.find((p) => p.id.toString() === id);
+
+  if (!product) {
+    return <h2>المنتج غير موجود</h2>;
+  }
+  
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -48,53 +57,28 @@ export default function Card() {
     return () => ctx.revert();
   }, []);
 
+ 
+
   return (
-    <>
-      <br />
-      <br />
-
-      <div className="m-1 row" ref={containerRef}>
-        {/* القسم الأيسر (الصورة) */}
-        <div className="col-6 col-md-6 d-flex justify-content-center">
-          <a href="">
-            <img
-              src="../../public/photo/نيلز1.jpg"
-              alt="نيلز"
-              className="   card-imgs"
-            
-            />
-          </a>
-        </div>
-
-        {/* القسم الأيمن (النص) */}
-        <div className="col-12 col-md-6  ">
-          <div className="w-100  b">
-            <h1>1.5mm flouka single layer rat tail</h1>
-            
-            <br />
-            <br />
-            <br />
-
-            <h4>السعر: 80</h4>
-            <br />
-            <br />
-            <br />
-            <p>سلسله ستانلس ستيل من تصنيع فلوكه متوفره بسمك 1.5 مللي</p>
-            <br />
-            <br />
-            <br />
-
-            <div className="d-flex flex-wrap gap-3">
-              <button className="red">اضافه الي السله</button>
-              <button className="green">اشتري الان</button>
-            </div>
-          </div>
-
-        </div>
+    <div className="row m-1">
+      {/* القسم الأيسر (الصورة) */}
+      <div className="col-6 d-flex justify-content-center">
+        <img src={product.image} alt={product.name} className="card-imgs" />
       </div>
 
-
-    </>
-
+      {/* القسم الأيمن (النص) */}
+      <div className="col-6">
+        <h1>{product.name}</h1>
+        <h4>{product.price}$</h4>
+        <p>سلسله ستانلس ستيل من تصنيع فلوكه متوفره بسمك 1.5 مللي</p>
+        <div className="d-flex flex-wrap gap-3">
+          <button className="red">اضافه الي السله</button>
+          <button className="green">اشتري الان</button>
+        </div>
+      </div>
+    </div>
   );
 }
+}
+
+  
