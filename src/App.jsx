@@ -17,12 +17,7 @@ import ComponCard from './pages/ComponCard'
 
 function App() {
   
-    const [cart, setCart] = useState([]);
-
-    const addToCart = (product) => {
-       setCart((prev) => [...prev, product]);
-       };
-
+   
   return<>
   <Nav/>
   

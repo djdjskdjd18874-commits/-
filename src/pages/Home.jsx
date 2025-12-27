@@ -16,7 +16,7 @@ export default class Home extends Component {
     <div className="col-12 col-lg-6 position-relative">
       <a href="#">
         <img
-          src="../../public/photo/Nelis.webp"
+          src="/photo/Nelis.webp"
           alt="اضافر"
           width="350"
           height="250"
@@ -32,7 +32,7 @@ export default class Home extends Component {
     <div className="col-12 col-lg-6">
       <a href="#">
         <img
-          src="../../public/photo/Bages.webp"
+          src="/photo/Bages.webp"
           alt="شنط"
           width="350"
           height="250"
@@ -45,7 +45,7 @@ export default class Home extends Component {
     <div className="col-12 col-lg-6">
       <a href="#">
         <img
-          src="../../public/photo/اكسسوار1.jpeg"
+          src="/photo/اكسسوار1.jpeg"
           alt="اكسسوارات"
           width="350"
           height="250"
@@ -58,7 +58,7 @@ export default class Home extends Component {
     <div className="col-12 col-lg-6">
       <a href="#">
         <img
-          src="../../public/photo/ساعه.webp"
+          src="/photo/ساعه.webp"
           alt="ساعة"
           width="350"
           height="250"
@@ -72,7 +72,7 @@ export default class Home extends Component {
   <div className="col-6 d-flex justify-content-center align-items-center  d-none d-lg-block">
     <a href="#">
       <img
-        src="../../public/photo/logo3.jpg"
+        src="/photo/logo3.jpg"
         alt=""
         width="600"
         height="600"
