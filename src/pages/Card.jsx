@@ -4,7 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 
 import { useParams } from "react-router";
-import products from "../../static/product";
+import products from "/static/product";
 
 
 

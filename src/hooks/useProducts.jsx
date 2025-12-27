@@ -4,6 +4,9 @@ import productsData from "../data/products"; // استورد المصفوفة م
 function useProducts() {
   // نخزن المنتجات في state (ممكن لاحقاً تجيبها من API)
   const [products] = useState(productsData);
+   <Link to={`/Card/${product.id}`}>
+    
+   </Link>
 
   return products;
 }

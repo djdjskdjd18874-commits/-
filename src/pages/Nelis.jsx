@@ -3,7 +3,7 @@ import { Link } from "react-router";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ComponCard from "./ComponCard";
-import products from "../../static/product";
+import products from "/static/product";
 
 
 
@@ -56,10 +56,9 @@ export default class Nelis extends Component {
   {products.map((product, index) => (
     <div key={index} className="col-12 col-sm-6 col-md-4 col-lg-3 p-4">
       <div className="position-relative image-container">
-        <Link to={`/Card/${product.id}`}>
-          <img src={product.image} alt="Card" className="images" />
-        </Link>
-        <div className="text-center bg-body-secondary image">
+        
+          <img src={product.image} alt="Card" className="images" />   
+              <div className="text-center bg-body-secondary image">
           <h3>{product.title}</h3>
           <p>{product.description}</p>
           <h5>{product.price}</h5>
