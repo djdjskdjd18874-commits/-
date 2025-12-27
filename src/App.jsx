@@ -22,8 +22,8 @@ function App() {
   <Nav/>
   
   <Routes>
-   <Route index element={<Home/> } />
-   <Route path='/Nelis' element={<Nelis/>}/>
+   <Route index element={<Nelis/> } />
+   <Route path='/Nelis' element={<Home />}/>
     <Route path='/Card' element={<Card />}/>
     <Route path='/Accessories' element={<Accessories/>}/>
     <Route path='/ComponCard' element={<ComponCard/>}/>
