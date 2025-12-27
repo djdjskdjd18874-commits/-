@@ -52,13 +52,17 @@ export default class Nelis extends Component {
     <br />
     <br />
     <ComponCard/>
-    <div className="row">
+    
+    <div className="d-flex justify-content-center align-items-center ">
+    
+    <div className="  row container  ">
   {products.map((product, index) => (
-    <div key={index} className="col-12 col-sm-6 col-md-4 col-lg-3 p-4">
+    <div key={index} className=" col-12 col-sm-6 col-md-4 col-lg-3   ">
       <div className="position-relative image-container">
-        
-          <img src={product.image} alt="Card" className="images" />   
-              <div className="text-center bg-body-secondary image">
+        <Link to={`/Card/${product.id}`}>
+          <img src={product.image} alt="Card" className="images" />
+        </Link>
+        <div className="text-center bg-body-secondary image">
           <h3>{product.title}</h3>
           <p>{product.description}</p>
           <h5>{product.price}</h5>
@@ -67,6 +71,8 @@ export default class Nelis extends Component {
     </div>
   ))}
 </div>
+</div>
+
 
 
 

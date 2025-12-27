@@ -13,8 +13,8 @@ export default class Home extends Component {
   {/* القسم الأيسر */}
   <div className="col-12 col-lg-6 row ">
     {/* صورة إضافر */}
-    <div className="col-12 col-lg-6 position-relative">
-      <a href="#">
+    <div className="col-12 col-lg-6  ">
+      <a href="/Nelis">
         <img
           src="/photo/Nelis.webp"
           alt="اضافر"
@@ -23,14 +23,14 @@ export default class Home extends Component {
           className="m-5 "
         />
       </a>
-      <div className="image-overlay text-center">
-        <h2>اضافر</h2>
+      <div className=" text-center">
+        <h2></h2>
       </div>
     </div>
 
     {/* صورة شنط */}
-    <div className="col-12 col-lg-6">
-      <a href="#">
+    <div className="col-12 col-lg-6 ">
+      <a href="">
         <img
           src="/photo/Bages.webp"
           alt="شنط"
@@ -43,7 +43,7 @@ export default class Home extends Component {
 
     {/* صورة اكسسوارات */}
     <div className="col-12 col-lg-6">
-      <a href="#">
+      <a href="/Accessories">
         <img
           src="/photo/اكسسوار1.jpeg"
           alt="اكسسوارات"
@@ -55,7 +55,7 @@ export default class Home extends Component {
     </div>
 
     {/* صورة ساعة */}
-    <div className="col-12 col-lg-6">
+    <div className="col-12 col-lg-6 ">
       <a href="#">
         <img
           src="/photo/ساعه.webp"
@@ -69,14 +69,14 @@ export default class Home extends Component {
   </div>
 
   {/* القسم الأيمن (اللوجو) */}
-  <div className="col-6 d-flex justify-content-center align-items-center  d-none d-lg-block">
+  <div className="col-6 d-flex justify-content-center align-items-center  d-none d-lg-block ">
     <a href="#">
       <img
-        src="/photo/logo3.jpg"
+        src="/photo/logo2.jpg"
         alt=""
         width="600"
         height="600"
-        className="m-5 "
+        className="m-5  "
       />
     </a>
   </div>

@@ -44,7 +44,7 @@ export default function ComponCard() {
     <div class="col-12 col-sm-6 col-md-4 col-lg-3 h-100 m-4 d-none d-md-block">
       <div class="position-relative image-container">
         <a href="">
-          <img src="../../public/photo/Nelis2.jpg.jpeg" alt="" class="img-fluid images" />
+          <img src="/photo/Nelis2.jpg.jpeg" alt="" class="img-fluid images" />
         </a>
       </div>
     </div>

@@ -15,7 +15,7 @@ export default class Nav extends Component {
   render() {
     return <>
 
- <div className='slide-in-left'>
+ <div className='slide-in-left '>
   
       <section className='hight  bg-color '>
 
@@ -126,8 +126,8 @@ export default class Nav extends Component {
       </div>
 
       {/* الكولابس العادي يظهر فقط على الشاشات الكبيرة */}
-      <div className="collapse navbar-collapse d-none d-lg-block" id="navbarSupportedContent">
-        <ul className="navbar-nav">
+      <div className=" collapse navbar-collapse d-none d-lg-block" id="navbarSupportedContent">
+        <ul className="navbar-nav ">
           {
             this.state.menuData &&
             this.state.menuData.map(
